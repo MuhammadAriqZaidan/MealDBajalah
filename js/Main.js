@@ -21,7 +21,7 @@ const searchMeal = async (e) => {
         ingredients.push(
           `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
         );
-      } else {
+      } else {  
         break;
       }
     }
@@ -71,4 +71,3 @@ form.addEventListener("submit", searchMeal);
 
 const magnifier = document.querySelector(".magnifier");
 magnifier.addEventListener("click", searchMeal);
-input
